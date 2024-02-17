@@ -1,8 +1,8 @@
-# Git
+# Git 基础
 
-Git 是由 Linux 之父 Linus 为了更好地管理 Linux 源码而编写的最流行的分布式版本控制系统。对于新手而言，在日常工作中还是尽量使用界面工具，避免意外操作，如 SourceTree、GitHub Desktop 等。如果想了解更多 Git 的资料请前往 [Awesome Git List](https://ngte-al.gitbook.io/i/?q=Git)。
+![](https://github.com/xirong/my-git/blob/master/command-handbook/git-cheat-sheet.png?raw=true)
 
-# Git 历史
+![](https://raw.githubusercontent.com/xirong/my-git/master/command-handbook/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.png)
 
 The name "git" was given by Linus Torvalds when he wrote the very first version. He described the tool as "the stupid content tracker" and the name as (depending on your way):
 
@@ -13,8 +13,6 @@ The name "git" was given by Linus Torvalds when he wrote the very first version.
 - "global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.
 
 - "g*dd*mn idiotic truckload of sh\*t": when it breaks
-
-# 分布式管理与集中式管理
 
 The major difference between Git and any other VCS (Subversion and friends included) is the way Git thinks about its data. Conceptually, most other systems store information as a list of file-based changes. These other systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they store as a set of files and the changes made to each file over time (this is commonly described as delta-based version control).
 
@@ -32,13 +30,6 @@ Git doesn’t think of or store its data this way. Instead, Git thinks of its da
 
 - Head: The reference to the most recent commit is called Head.
 
-- Branches: GIT follows a sort of tree like analogy for keeping track of code, when several people are collaborating on a project, the general procedure is to make a branch from the master branch, do the changes there and make a request to the master branch to merge the code.Basically, All commits live on some branch and there can be many branches in a single project repository.
+- Branches: GIT follows a sort of tree like analogy for keeping track of code, when several people are collaborating on a project, the general procedure is to make a branch from the master branch, do the changes there and make a request to the master branch to merge the code. Basically, All commits live on some branch and there can be many branches in a single project repository.
 
 ![](https://cdn-images-1.medium.com/max/1600/0*-8t0j0AN8GL2OP9y.png)
-
-# Links
-
-- https://mp.weixin.qq.com/s/ZuSjmkMj8cOFgkV0ojMosQ
-- https://zhuanlan.zhihu.com/p/71577255 深入理解 Git
-- https://www.liaoxuefeng.com/wiki/896043488029600
-- https://learnxinyminutes.com/docs/zh-cn/git-cn/
