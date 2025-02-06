@@ -104,3 +104,13 @@ A--B--D--E    feature        // Anna
 这个第 M 个提交即代表着合并的提交，也就是 Anna 本地的分支与 Github 上的特征分支最终合并的点，现在 Anna 解决了所有的合并冲突并且可以 Push 她的代码，在 Bob 进行 Pull 之后，每个人的 Git Commit 结构为：
 
 到这里，看到上面这个混乱的流线图，相信你对于 Rebase 和所谓的黄金准则也有了更形象深入的理解。这还只是仅有两个人，一个特征分支的项目因为误用 rebase 产生的后果。如果你团队中的每个人都对公共分支进行 rebase 操作，那还不得一团乱麻。另外，相信你也注意到，在远端的仓库中存有大量的重复的 Commit 信息，这会大大浪费我们的存储空间。如果你还觉得这么什么，那我们来假设下还有一哥们 Emma，第三个开发人员，在他进行了本地 Commit 并且 Push 到远端之后，仓库变为了：
+
+# Links
+
+- [2017~Merging vs. Rebasing](https://dzone.com/articles/merging-vs-rebasing): While merging and rebasing are similar in Git, they serve two different functions. Here's what you should know to keep your histories as clean or as complete as you like.
+
+- [2017~Why you should stop using Git rebase](https://parg.co/bBO): After using Git for several years, I found myself gradually using more and more advanced Git commands as part of my daily workflow.
+
+- [git-rebase-and-the-golden-rule-explained](https://medium.freecodecamp.com/git-rebase-and-the-golden-rule-explained-70715eccc372#.8snfmpokv)
+
+- [Mastering Git — Why Rebase is amazing](https://hackernoon.com/mastering-git-why-rebase-is-amazing-a954485b128a?source=reading_list---------90-1---------)
