@@ -1,10 +1,8 @@
-GitHub 里程碑
-===
+# GitHub 里程碑
 
-写在 GitHub 的第 19999 个 Star 时
----
+## 写在 GitHub 的第 19999 个 Star 时
 
->  Star 虽好，可不要贪杯哦。
+> Star 虽好，可不要贪杯哦。
 > 两年前在做 Annual Review 订下一年的目标时，想着写一个开源框架。去年订下今年的目标时，仍然继续着这样的想法。今年又要制定下一年的目标，2333~~。
 
 不久前，在 GitHub Ranking 上看到自己的 Star 数（Star 不是设计用于做“点赞”的，而是用来收藏的）时，发现已经快 20000 了。然后把自己的项目过了一遍，发现没有一个比较好的**代表性框架**，要么是应用，要么是电子书。
@@ -19,7 +17,7 @@ GitHub 里程碑
 
 当时，我遇到的最主要的问题是：**想参与到项目的人并没有遇到足够的能力**。你还需要花费大量的时间去教他们，鼓励 GitHub 新手并不是一件容易的事。有时我需要在接受他的 PR 后，再修改他的代码。并且人们提交 PR 可能是出于不同的原因。
 
-然后，知道了开源世界还有一个游戏规则是：**谁的影响力大，谁就能产生更广泛的影响**。如 Virtual Dom 并不是 Facebook 首创的，但是却因为 FB 火的； 松本行弘在写下 mruby 的 README 时（印象中是这个项目），Star 数就已经过 1k 了。这种例子数不胜数，要么是在推广上花了力气，要么个人、公司有着更大的影响力。
+然后，知道了开源世界还有一个游戏规则是：**谁的影响力大，谁就能产生更广泛的影响**。如 Virtual Dom 并不是 Facebook 首创的，但是却因为 FB 火的；松本行弘在写下 mruby 的 README 时（印象中是这个项目），Star 数就已经过 1k 了。这种例子数不胜数，要么是在推广上花了力气，要么个人、公司有着更大的影响力。
 
 一年前，稍微改变了下策略：暂时以**培养人为主**，同时想着做一个合适的开源框架——只是在今年看来，前端领域已经没有合适的地方可以造轮子了。
 
@@ -29,9 +27,9 @@ GitHub 里程碑
 
 去年年底写总结的时候，想到可以 RePractise 文章为基础来培养人，于是就有了 Growth 的三个项目：
 
- - 应用：[Growth](https://github.com/phodal/growth)
- - 电子书：《[Growth：全栈增长工程师指南](https://github.com/phodal/growth-ebook)》
- - 电子书：《[Growth：全栈增长工程师实战](https://github.com/phodal/growth-in-action)》
+- 应用：[Growth](https://github.com/phodal/growth)
+- 电子书：《[Growth：全栈增长工程师指南](https://github.com/phodal/growth-ebook)》
+- 电子书：《[Growth：全栈增长工程师实战](https://github.com/phodal/growth-in-action)》
 
 如今 Growth 已经有了过万的用户，每天活跃的用户数也接近 300 了。第一步看上去很成功，但是下一步怎么走呢？
 
