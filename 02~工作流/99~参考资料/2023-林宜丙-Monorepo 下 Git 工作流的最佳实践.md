@@ -5,11 +5,11 @@
 - Feature branch 和 Trunk-based 工作流是比较新晋的概念，二者是相对的、互斥的，它们组成一个全集；
 - Git flow, Gitlab flow, Github flow 都属于 feature branch development，它们有一个共同点：都采用『功能驱动式开发』，即：需求是开发的起点，先有需求再有功能分支（feature branch）或者补丁分支（hotfix branch）；
 
-![Feature branch vs Git flow](https://assets.ng-tech.icu/item/20230302200730.png)
+![Feature branch vs Git flow](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230302200730.png)
 
 在 Monorepo 工程中，使用 feature branch development 开发模式时，随着代码库复杂性和团队规模的增长，并行的『长期分支』也会越来越多，这些分支在合入主干时，将会频繁遇到冲突或者不兼容的情况，而手动解决代码冲突往往会引入 Bug。而 trunk-based development 鼓励开发者可以通过一些小的提交创建『短期分支』，从而大大缓解冲突问题，有助于保持生产版本的流畅。总的来说，选择一个工作流不仅仅是一系列操作工具的流程，我们往往还需要对它背后的思想买单；下面的表格是两种工作流模式在各个维度的适用情况：
 
-![工作流模式](https://assets.ng-tech.icu/item/20230302200920.png)
+![工作流模式](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230302200920.png)
 
 目前大部分业务场景使用的都是 feature branch 的开发模式，如果你的业务是多人开发一个巨型应用（如抖音主站、飞书文档等），应该尝试使用 Trunk based 开发模式，这会提高仓库整体工程质量和管理水平。
 
@@ -17,7 +17,7 @@
 
 『功能分支开发模式』的核心思想是所有特性开发都应该在专用的分支，而不是主分支中进行。这种封装使多个开发人员，可以轻松地在不干扰主代码库的情况下处理特定功能。这也意味着主分支永远不会包含损坏的代码，这对于持续集成环境来说是一个巨大的优势。-- Git Feature Branch Workflow | Atlassian Git Tutorial
 
-![Feature branch](https://assets.ng-tech.icu/item/20230302201024.png)
+![Feature branch](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230302201024.png)
 
 1、从 master 分支创建一个功能分支（Feature Branch）
 2、开发者们在功能分支中完成开发工作
@@ -42,13 +42,13 @@
 
 『基于主干的开发模式』是一种版本控制管理实践，开发者将小而频繁的更新合并到核心『主干』（通常是 master 分支）。这是 DevOps 团队中的一种常见做法，也是 DevOps 生命周期的一部分，因为它简化了合并和集成阶段。事实上，它也是 CI/CD 的必备实践。与其它存在『长期分支』的功能分支策略相比，开发者可以通过一些小的提交创建『短期分支』。随着代码库复杂性和团队规模的增长，『基于主干的开发模式』有助于保持生产版本的流畅。-- Trunk-based Development | Atlassian
 
-![Trunk-based Development](https://assets.ng-tech.icu/item/20230302201509.png)
+![Trunk-based Development](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230302201509.png)
 
 ## 从部署分支上线
 
 半自动化流程，适用于低频率部署，以及自动化测试不全面的项目：
 
-![半自动化流程](https://assets.ng-tech.icu/item/20230302201546.png)
+![半自动化流程](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230302201546.png)
 
 A dot represents an MR merged into master. Green dots means good commits that passed e2e tests, and red dot means a buggy commit which should be avoided when deploying/rollback.
 
@@ -66,7 +66,7 @@ A dot represents an MR merged into master. Green dots means good commits that pa
 
 全自动化流程，适用于需要高频率部署，以及自动化测试较为全面的项目：
 
-![从主干分支上线](https://assets.ng-tech.icu/item/20230302201723.png)
+![从主干分支上线](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230302201723.png)
 
 A dot represents an MR merged into master. Green dots means good commits that passed e2e tests, and red dot means a buggy commit which should be avoided when deploying/rollback.
 
@@ -85,7 +85,7 @@ A dot represents an MR merged into master. Green dots means good commits that pa
 - 方便排查 bug，比如：使用 Git bisect 二分排查，而非线性历史则难以操作
 - 撤销变更，比如：当你发现一个有问题的 commit，简单的 revert 对应的 commit 即可，而非线性的历史会有很多跨分支的合并，使 revert 变得困难
 
-![Linear history & Non-linear history](https://assets.ng-tech.icu/item/20230302201925.png)
+![Linear history & Non-linear history](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230302201925.png)
 
 ## 有效的两个前提
 
