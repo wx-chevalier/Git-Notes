@@ -79,8 +79,6 @@
 
 然后查看它的 `flask.py` 文件，只有简单的三百多行，并且还包含一系列注释：
 
-![flask-init.png](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/phodal-github/flask-init.png)
-
 五、接着，再回过头去阅读
 
 - 0.1 版本

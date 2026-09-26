@@ -68,8 +68,6 @@ A dot represents an MR merged into master. Green dots means good commits that pa
 
 ![从主干分支上线](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230302201723.png)
 
-A dot represents an MR merged into master. Green dots means good commits that passed e2e tests, and red dot means a buggy commit which should be avoided when deploying/rollback.
-
 1、定时部署：每天或者每小时到了特定时间，部署机器人自动找到当前最新通过全部端到端测试的代码 (特定的 commit hash)，然后将之部署上线。
 2、持续部署：每当有新代码合并进主干分支时，部署机器人自动验证新代码是否通过所有端到端测试，以及是否与该项目相关，如果是则自动部署上线
 

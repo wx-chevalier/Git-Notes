@@ -106,13 +106,6 @@ def parse_data(jsonfile):
     dataarray = []
     datacount = 0
 
-    for line in open(jsonfile):
-        line = f.readline()
-        lin = json.loads(line)
-        date = dateutil.parser.parse(lin["created_at"])
-        datacount += 1
-        dataarray.append(date.minute)
-
     minuteswithcount = [(x, dataarray.count(x)) for x in set(dataarray)]
     f.close()
     return minuteswithcount
@@ -198,13 +191,6 @@ def handle_json(jsonfile):
     f = open(jsonfile, "r")
     dataarray = []
     datacount = 0
-
-    for line in open(jsonfile):
-        line = f.readline()
-        lin = json.loads(line)
-        date = dateutil.parser.parse(lin["created_at"])
-        datacount += 1
-        dataarray.append(date.minute)
 
     f.close()
     return datacount, dataarray
@@ -512,10 +498,6 @@ osrc 最有意思的一部分莫过于 flann，当然说的也是系统后台的
 > 邻近算法，或者说 K 最近邻（kNN，k-NearestNeighbor）分类算法可以说是整个数据挖掘分类技术中最简单的方法了。所谓 K 最近邻，就是 k 个最近的邻居的意思，说的是每个样本都可以用她最接近的 k 个邻居来代表。
 
 换句话说，我们需要一些样本来当作我们的分析资料，这里东西用到的就是我们之前的。
-
-```
-[227.0, {'1': '51', '0': '41', '3': '17', '2': '34', '5': '28', '4': '22', '6': '34'}, [('PushEvent', 154.0), ('CreateEvent', 41.0), ('WatchEvent', 18.0), ('GollumEvent', 8.0), ('MemberEvent', 3.0), ('ForkEvent', 2.0), ('ReleaseEvent', 1.0)], 0, 0, 0, 11, [('CSS', 74.0), ('JavaScript', 60.0), ('Ruby', 12.0), ('TeX', 6.0), ('Python', 6.0), ('Java', 5.0), ('C++', 5.0), ('Assembly', 5.0), ('C', 3.0), ('Emacs Lisp', 2.0), ('Arduino', 2.0)]]
-```
 
 在代码中是构建了一个 points.h5 的文件来分析每个用户的 points，之后再记录到 hdf5 文件中。
 
