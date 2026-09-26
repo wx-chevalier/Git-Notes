@@ -72,7 +72,7 @@ it("specifying response when you need it", function (done) {
 ```
 
 代码来源：[https://github.com/phodal/lettuce](https://github.com/phodal/lettuce)
-  
+
 看上去似乎每个测试都很小，不过补完每一个测试之后我们就得到了测试覆盖率
 
 | File       | Statements         | Branches        | Functions         | Lines              |

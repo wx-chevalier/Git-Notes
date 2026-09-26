@@ -11,7 +11,6 @@ Wiki百科上是这么说的
 
 > GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over eight million people use GitHub to build amazing things together.
 
-
 它还是什么?
 
 - 网站
@@ -56,7 +55,7 @@ jQuery[^jQuery]在发布版本``2.1.3``，一共有152个commit。我们可以�
  - CI(持续集成)
  - 测试覆盖率
  - 代码质量(code smell)
- 
+
 对于一个不是远程的团队(如只有一个人的项目) 来说，Trello、Jenkin、Jira不是必需的:
 
 > 你存在，我深深的脑海里
@@ -96,7 +95,7 @@ it("specifying response when you need it", function (done) {
  - 我不希望每次做完一个个新功能的时候，再手动地去测试一个个功能。(自动化测试)
  - 我不希望在重构的时候发现破坏了原来的功能，而我还一无所知。
  - 我不敢push代码，因为我没有把握。
- 
+
 虽然，我不是TDD的死忠，测试的目的是保证功能正常，TDD没法让我们写出质量更高的代码。但是有时TDD是不错的，可以让我们写出逻辑更简单地代码。
 
 也许你已经知道了``Selenium``、``Jasmine``、``Cucumber``等等的框架，看到过类似于下面的测试
@@ -116,7 +115,7 @@ it("specifying response when you need it", function (done) {
 ```
 
 代码来源: [https://github.com/phodal/lettuce](https://github.com/phodal/lettuce)
-	   
+
 看上去似乎每个测试都很小，不过补完每一个测试之后我们就得到了测试覆盖率
 
 File | Statements | Branches | Functions | Lines
@@ -155,7 +154,7 @@ CI对于一个开发者在不同城市开发同一项目上来说是很重要的
  - 重复代码
  - 过长的函数
  - 等等
- 
+
 ``Code Climate``是一个与github集成的工具，我们不仅仅可以看到测试覆盖率，还有代码质量。
 
 先看看上面的ajax类:

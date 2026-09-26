@@ -25,7 +25,7 @@ Git 提交信息及几种不同的规范
 因此，这个时候我们的规范稍微有一些特别：
 
 ```
-[任务卡号] xx & xx: do something 
+[任务卡号] xx & xx: do something
 ```
 
 比如：``[PHODAL-0001] ladohp & phodal: update documents``，解释如下：
@@ -91,4 +91,3 @@ Git 提交信息及几种不同的规范
 （以上的 10 个类型，感谢 Google Translate 提供的快速翻译支持）
 
 而这样做的优点是，它可以轻松地生成一个 CHANGELOG。与此同时还有一个名为 ``Conventional Commits`` 的规范，建议采用相似的形式。
-

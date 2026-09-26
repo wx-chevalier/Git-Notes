@@ -100,7 +100,6 @@ import numpy as np
 import matplotlib.mlab as mlab
 import matplotlib.pyplot as plt
 
-
 def parse_data(jsonfile):
     f = open(jsonfile, "r")
     dataarray = []
@@ -109,7 +108,6 @@ def parse_data(jsonfile):
     minuteswithcount = [(x, dataarray.count(x)) for x in set(dataarray)]
     f.close()
     return minuteswithcount
-
 
 def draw_date(files):
     x = []
@@ -186,7 +184,6 @@ def get_minutes_counts_with_id(jsonfile):
     minuteswithcount = [(x, dataarray.count(x)) for x in set(dataarray)]
     return minuteswithcount
 
-
 def handle_json(jsonfile):
     f = open(jsonfile, "r")
     dataarray = []
@@ -195,11 +192,9 @@ def handle_json(jsonfile):
     f.close()
     return datacount, dataarray
 
-
 def get_minutes_count_num(jsonfile):
     datacount, dataarray = handle_json(jsonfile)
     return datacount
-
 
 def get_month_total():
     """

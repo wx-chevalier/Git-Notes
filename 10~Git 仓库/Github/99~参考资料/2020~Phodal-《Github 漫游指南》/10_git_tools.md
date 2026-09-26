@@ -23,7 +23,6 @@ $ brew install git-extras
 ```
 $ git-summary
 
-
  project  : github-roam
  repo age : 2 years, 7 months
  active   : 40 days
@@ -73,7 +72,7 @@ gitflow 分支合并、查看
 $ githug
 
 ********************************************************************************
-*                                    Githug                                    *
+-                                    Githug                                    *
 ********************************************************************************
 No githug directory found, do you wish to create one? [yn]  y
 Welcome to Githug!
@@ -89,7 +88,7 @@ A new directory, `git_hug`, has been created; initialize an empty repository in 
 $ githug play
 
 ********************************************************************************
-*                                    Githug                                    *
+-                                    Githug                                    *
 ********************************************************************************
 Congratulations, you have solved the level!
 

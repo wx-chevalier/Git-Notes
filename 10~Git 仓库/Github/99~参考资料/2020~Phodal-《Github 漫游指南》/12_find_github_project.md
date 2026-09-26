@@ -33,7 +33,7 @@
  - Promise 支持
  - Class类（PS：没有一个好的类使用的方式）
  - Template 一个简单的模板引擎
- - Router 用来控制页面的路由 
+ - Router 用来控制页面的路由
  - Ajax 基本的 Ajax Get/Post 请求
 
 在做一些实际的项目中，还遇到了这样的一些功能支持：

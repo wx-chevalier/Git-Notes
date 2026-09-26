@@ -20,14 +20,14 @@ if (!req.headers.authorization) {
   res.setHeader('WWW-Authenticate', 'Basic realm="Secure Area"');
   return res.end('Unauthorized');
 }
-```       
-       
+```
+
 可是除了 HTTP 协议，还有 MQTT 和 CoAP。对于 MQTT 协议来说，那还算好，毕竟自带授权，如：
 
 ```bash
 mosquitto_pub -u root -P root -h localhost -d -t lettuce -m "Hello, MQTT. This is my first message."
 ```
-       
+
 便可以让我们简单地完成这个功能，然而有的协议是没有这样的功能如 CoAP 协议中是用 Option 来进行授权的。现在的工具如 libcoap 只能有如下的简单功能
 
 ```bash
@@ -50,7 +50,7 @@ req.setOption('Block2',  [new Buffer('phodal'), new Buffer('phodal')]);
 
 req.end();
 ```
-	
+
 写完测试脚本后发现不对了，这个不应该是测试的代码吗？于是将其放到了 spec 中，接着发现了上面的全部功能的实现过程为什么不用 TDD 实现呢？
 
 ### 说说 TDD
@@ -76,7 +76,6 @@ req.end();
 然而，在当前这种情况下，我知道我想要的功能，但是我并不理解其深层次的功能。我需要花费大量的时候来理解，它为什么是这样的，需要先有一些脚本来知道它是怎么工作的。TDD 变显得很有价值，换句话来说，在现有的情况下，TDD 对于我们不了解的一些事情，可以驱动出更多的开发。毕竟在我们完成测试脚本之后，我们也会发现这些测试脚本成为了代码的一部分。
 
 在这种理想的情况下，我们为什么不 TDD 呢？
-
 
 ## 功能测试
 
@@ -235,4 +234,3 @@ req.end();
 				.toEqual(data);
 		});
 	});
-
